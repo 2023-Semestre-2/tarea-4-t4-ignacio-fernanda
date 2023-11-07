@@ -1,0 +1,158 @@
+/* Estilos generales para todos los tamaños de pantalla */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para pantallas de escritorio (ancho mayor o igual a 1024px) */
+@media (min-width: 1024px) {
+    body {
+        background-color: #e6f7ff;
+    }
+    .container {
+        background-color: #fff;
+        max-width: auto; /* Ajusta el ancho del contenedor a 960px */
+        margin: 0 auto; /* Centra el contenedor horizontalmente en la pantalla */
+    }
+    .articles-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        align-items: center;
+        justify-content: center;
+
+    }
+    img {
+        display: none;
+    }
+    .section-image {
+        width: 300px;
+        height: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+    .section-gif {
+        display: block;
+        margin: 0 auto;
+    }
+    .image-first {
+        width: 300px;
+        height: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Estilos para tablet (ancho entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: #c3ffd5;
+    }
+    .container {
+        background-color: #fff;
+        max-width: 90%; /* Ajusta el ancho del contenedor al 90% del ancho de la pantalla */
+        margin: 0 auto;
+    }
+    .articles-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        padding: 10px;
+    }
+    img {
+        display: none;
+    }
+    .section-image {
+        width: 200px;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+    .section-gif {
+        display: block;
+        margin: 0 auto;
+    }
+    .image-first {
+        width: 200px;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Estilos para dispositivos móviles (ancho menor a 768px) */
+@media screen and  (max-width: 767px) {
+    body {
+        background-color: #ffc2b2;
+    }
+    .container {
+        background-color: #fff;
+        max-width: 100%; /* Ajusta el ancho del contenedor al 100% del ancho de la pantalla */
+        margin: 10px;
+        padding: 10px;
+    }
+    .articles-container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        padding: 10px;
+    }
+    img {
+        display: none;
+    }
+    .section-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .section-gif {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .mobile{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
